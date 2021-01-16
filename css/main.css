@@ -1453,11 +1453,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 .header-logo {
     display: inline-block;
-    position: absolute;
+    position: fixed;
     margin: 0;
     padding: 0;
     left: 40px;
-    top: 50%;
+    top: 10%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
