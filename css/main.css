@@ -1893,15 +1893,16 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     transition: all 0.15s ease-in-out;
 }
 
-.home-content__line {
+/*line removed*/
+/*.home-content__line {
     display: block;
     width: 2px;
-    height: 10.2rem;
+    height: 5.2rem;
     background-color: var(--primary-color-blue);
     position: absolute;
     right: 7.2rem;
     bottom: 0;
-}
+}*/
 
 
 /* ------------------------------------------------------------------- 
@@ -2269,8 +2270,8 @@ html.no-csstransitions .home-content__main {
     line-height: 1.333;
     position: relative;
 }
-
-.about__line {
+/*line removed*/
+/*.about__line {
     display: block;
     width: 2px;
     height: 10.2rem;
@@ -2278,7 +2279,7 @@ html.no-csstransitions .home-content__main {
     position: absolute;
     right: 7.2rem;
     top: 0;
-}
+}*/
 
 
 /* ------------------------------------------------------------------- 
