@@ -194,6 +194,10 @@ p img {
     margin: 0;
 }
 
+p{
+    font-family: "montserrat-regular", sans-serif;
+}
+
 p.lead {
     font-family: "montserrat-regular", sans-serif;
     font-size: 2rem;
@@ -2627,7 +2631,8 @@ html.no-csstransitions .home-content__main {
 
 .category{
     font-weight:700;
-    color:var(--primary-color-blue)
+    color:var(--primary-color-blue);
+    font-family:"montserrat-bold",sans-serif;
 }
 
 .item-folio__caption {
