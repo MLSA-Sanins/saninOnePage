@@ -2625,6 +2625,11 @@ html.no-csstransitions .home-content__main {
     margin-bottom: 0;
 }
 
+.category{
+    font-weight:700;
+    color:var(--primary-color-blue)
+}
+
 .item-folio__caption {
     display: none;
 }
