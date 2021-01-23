@@ -1,8 +1,3 @@
-/* ===================================================================
- * Glint - Main JS
- *
- * ------------------------------------------------------------------- */
-
 (function($) {
 
     "use strict";
@@ -324,13 +319,13 @@
 
 
    /* Contact Form
-    * ------------------------------------------------------ */
+    * ------------------------------------------------------ 
     var clContactForm = function() {
         
-        /* local validation */
+        /* local validation 
         $('#contactForm').validate({
         
-            /* submit via ajax */
+            /* submit via ajax 
             submitHandler: function(form) {
     
                 var sLoader = $('.submit-loader');
@@ -374,7 +369,7 @@
             }
     
         });
-    };
+    };*/
 
 
    /* Animate On Scroll
@@ -423,7 +418,7 @@
             5: '<i class="fa fa-warning"></i> E-mail address is not valid.'
         } 
 
-    };
+    };*/
 
 
    /* Back to Top
