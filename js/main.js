@@ -395,7 +395,7 @@
 
    /* AjaxChimp
     * ------------------------------------------------------ */
-    var clAjaxChimp = function() {
+    /*var clAjaxChimp = function() {
         
         $('#mc-form').ajaxChimp({
             language: 'es',
