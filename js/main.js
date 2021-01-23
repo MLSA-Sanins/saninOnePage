@@ -319,13 +319,13 @@
 
 
    /* Contact Form
-    * ------------------------------------------------------ 
+    * ------------------------------------------------------ */
     var clContactForm = function() {
         
-        /* local validation 
+        /* local validation */
         $('#contactForm').validate({
         
-            /* submit via ajax 
+            /* submit via ajax */
             submitHandler: function(form) {
     
                 var sLoader = $('.submit-loader');
@@ -369,7 +369,7 @@
             }
     
         });
-    };*/
+    };
 
 
    /* Animate On Scroll
@@ -443,7 +443,8 @@
 
 
    /* Initialize
-    * ------------------------------------------------------ */
+    * clAlertBoxes();
+        clContactForm();clAjaxChimp();------------------------------------------------------ */
     (function ssInit() {
         
         clPreloader();
@@ -455,10 +456,7 @@
         clSlickSlider();
         clSmoothScroll();
         clPlaceholder();
-        clAlertBoxes();
-        clContactForm();
         clAOS();
-        clAjaxChimp();
         clBackToTop();
 
     })();
