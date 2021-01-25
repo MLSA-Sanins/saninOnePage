@@ -1,0 +1,144 @@
+.grid-container {
+  display:grid;
+  grid-template-columns:repeat(3,auto);
+  grid-gap: 2em;
+  
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  border-radius: 15px;
+  width: 280px;
+  height: 380px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container 
+
+*/
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  border-radius: 15px;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  display:flex;
+  background-color: #111;
+  flex-direction: column;
+  color:white;
+  border-radius: 15px;
+}
+
+
+
+/* Style the back side */
+.flip-card-back {
+  background-color: white;
+  color: black;
+  display:flex;
+  flex-direction: column;
+  transform: rotateY(180deg);
+  border-radius: 15px;
+}
+
+.card-details-div{
+  flex-grow: 1;
+}
+
+.card-registerButton-div{
+  height:15%;
+  margin:0;
+  padding:0;
+}
+
+.register-button{
+  width:100%;
+  height:100%;
+  padding:0;
+  margin:0;
+  border-radius:0 0 15px 15px;
+}
+
+.card-image-div{
+  height:45%;
+  border-radius: 15px 15px 0 0;
+  background-image: url(/images/1.png);
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-title-div{
+  flex-grow:1;
+  height:25%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-title-div h4{
+  padding:0;
+  margin:0;
+  color:white;
+}
+
+.card-title-div h5{
+  padding:0;
+  margin:0;
+  color:white;
+}
+
+
+.card-image{
+  max-height: 100%;
+  border-radius:15px 15px 0px 0px;
+}
+
+.details-button{
+  width:100%;
+  height:100%;
+  border-radius:0px 0px 15px 15px;
+  background-color: #302b70;
+  border:none;
+  color:white;
+}
+
+@media only screen and (max-width: 900px) {
+  .grid-container{
+    grid-template-columns: 1fr;
+  }
+  .grid-item{
+    
+  }
+}
+
+
+
