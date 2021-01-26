@@ -1687,6 +1687,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     top: 0;
     left: -70px;
     width: 70px;
+    height: 42px;
     padding-left: 12px;
 }
 
@@ -2512,7 +2513,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .s-works .intro-wrap {
-    padding: 15rem 0 25.2rem;
+    padding: 13rem 0 13rem;
     background: #111111;
 }
 
@@ -3067,6 +3068,7 @@ body {
 }
 .text-uppercase {
     text-transform: uppercase;
+    color:#0078d4;
 }
 
 /*the team grid*/
@@ -3825,6 +3827,36 @@ footer .row {
         padding-left: 0;
     }
 }
+
+.interest{
+    width:50%;
+    float: left;
+}
+
+.interest img{
+    position:relative;
+    height:150px;
+    width:150px;
+}
+.interest p{
+    padding: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+    .interest{
+        width:100%;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .interest{
+        width:100%;
+    }
+    .interest img{
+        height:100px;
+        width:100px;
+    }
+}
+
 
 
 /*# sourceMappingURL=main.css.map */

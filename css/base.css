@@ -521,6 +521,7 @@ textarea {
 .col-twelve,
 .col-full {
     width: 100%;
+    margin-bottom: 30px;
 }
 
 
