@@ -3118,7 +3118,7 @@ position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
     grid-gap: 2em;
-    grid-template-rows: repeat(2,minmax(200px,500px));
+    grid-template-rows: repeat(auto,minmax(200px,500px));
     width: 100%;
   }
   
