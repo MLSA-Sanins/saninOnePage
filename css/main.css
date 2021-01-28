@@ -59,7 +59,7 @@
  * # base style overrides
  *
  * ------------------------------------------------------------------- */
-:root{
+ :root{
     --primary-color-blue:#0078d4;
     --primary-color-purple: #5c2d91;
     --accent-color-blue:#50e6ff;
@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6,
     text-rendering: optimizeLegibility;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+ .h1, .h2, .h3, .h4 {
     margin-top: 6rem;
     margin-bottom: 1.8rem;
 }
@@ -3099,12 +3099,12 @@ position: relative;
     width:100%;
     height:100%;
     background: black;
-    background-image: url(/images/pexels3.jpg);
+    background-image: url(/images/pexels-zaksheuskaya-1546251.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
     
   }
   
@@ -3116,21 +3116,104 @@ position: relative;
   
   .team-grid{
     display: grid;
-    grid-template-columns: repeat(3,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
     grid-gap: 2em;
     grid-template-rows: repeat(2,minmax(200px,500px));
     width: 100%;
   }
   
   .team-grid-item{
-    padding:4em;
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
   }
 
+  .team-card{
+      width:280px;
+      height:400px;
+      position:relative;
+      display:flex;
+      flex-direction: column;
+      background: rgba( 255, 255, 255, 0.15 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.5 );
+      backdrop-filter: blur( 6.5px );
+      -webkit-backdrop-filter: blur( 6.5px );
+      transition: 0.1s ease-out;
+  }
+
+  .team-card:hover{
+      transform:scale(1.03);
+      background: rgba( 255, 255, 255, 0.25 );
+      box-shadow: 0 18px 32px 0 rgba( 31, 38, 135, 0.7 );
+      backdrop-filter: blur( 8px );
+      -webkit-backdrop-filter: blur( 8px );
+  }
+
+  .cover-image{ 
+      width: 100%;
+      height:40%;
+      background-color: #000000;
+      padding:0;
+  }
+
+  .avatar-div{
+    width:110px;
+    height:110px;
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:0;
+    border-radius: 50%;
+    background: rgba( 255, 255, 255, 0.15 );
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur( 8.5px );
+      -webkit-backdrop-filter: blur( 8.5px );
+      
+  }
+
+  .avatar-image{
+    width:90%;
+    border-radius: 50%;
+  }
+
+  .bio-div{
+      padding-top:1em;
+      flex-grow:1;
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+      border:1px solid white;
+  }
+
+  .bio-div h3{
+    font-family: "montserrat-light";
+    color:black;
+    padding:0;
+    margin:0;
+    line-height: 30px;
+  }
+
+  .button-div{
+      display: flex;
+        width:100%;
+        justify-items: space-evenly;
+  }
+
+  .profile-link{
+      width:20px;
+      height:20px;
+      background-color: #000000;
+  }
   
   @media only screen and (max-width: 1200px) {
     .team-grid{
       grid-template-columns:1fr;
       grid-template-rows: auto;
+      grid-gap:5em;
     }
     .team-grid-item{
         padding:0;
