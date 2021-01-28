@@ -1,6 +1,6 @@
 .grid-container {
   display:grid;
-  grid-template-columns:1fr;
+  grid-template-columns:auto;
   grid-gap: 2em;
   
 }
@@ -15,8 +15,8 @@
   .grid-container {
     grid-template-columns: 1fr;
   }
-  
 }
+
 
 *, *:before, *:after {
   box-sizing: inherit;

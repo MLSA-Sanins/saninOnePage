@@ -99,7 +99,7 @@ body {
  * ## links
  * ------------------------------------------------------------------- */
 a {
-    color: #0087cc;
+    color: var(--primary-color-blue);
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
@@ -1323,6 +1323,15 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     max-width: 960px;
 }
 
+.back-button{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:40%;
+    left:auto;
+    right:10%;
+}
+
 .section-header.has-bottom-sep {
     padding-bottom: 2.1rem;
     position: relative;
@@ -2517,6 +2526,29 @@ html.no-csstransitions .home-content__main {
     background: #111111;
 }
 
+.team-button-div{
+    margin-top:5em;
+    display:flex;
+    width:100%;
+    height:50px;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color-blue);
+}
+
+.team-view-button{
+border:2px solid var(--primary-color-blue);
+border-radius: 7px;
+padding:10px 20px 10px 20px;
+transition:0.4s ease-out;
+}
+
+.team-view-button:hover{
+    transform: scale(1.04);
+    background-color: var(--accent-color-darkBlue);
+    color: #FFFFFF;
+}
+
 .works-content {
     max-width: 1160px;
     margin-top: -23.4rem;
@@ -3033,18 +3065,7 @@ body {
 
 /* ================================================================================================== */
 /* team member */
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
 
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    line-height: 1.5;
-    color: #323232;
-    font-size: 15px;
-    font-weight: 400;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-}
 .heading-title {
     margin-bottom: 100px;
 }
@@ -3074,7 +3095,9 @@ body {
 /*the team grid*/
 
 .teams-section{
-margin: 0;
+margin-top: 5em;
+padding-top:12rem;
+padding-bottom:25rem;
 position: relative;
 }
 
@@ -3117,7 +3140,8 @@ position: relative;
   .team-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-    grid-gap: 2em;
+    grid-row-gap: 5em;
+    grid-column-gap:4em;
     grid-template-rows: repeat(auto,minmax(200px,500px));
     width: 100%;
   }
@@ -3131,7 +3155,7 @@ position: relative;
 
   .team-card{
       width:280px;
-      height:400px;
+      height:350px;
       position:relative;
       display:flex;
       flex-direction: column;
@@ -3152,16 +3176,17 @@ position: relative;
 
   .cover-image{ 
       width: 100%;
-      height:40%;
+      height:30%;
       background-color: #000000;
       padding:0;
+      object-fit: cover;
   }
 
   .avatar-div{
     width:110px;
     height:110px;
     position:absolute;
-    top:40%;
+    top:30%;
     left:50%;
     transform: translate(-50%,-50%);
     padding:0;
@@ -3224,6 +3249,9 @@ position: relative;
     }
     .team-grid-item{
         padding:0;
+      }
+      .blank{
+          display:none;
       }
   }
 /*TEAM CARD EXTRA*/
