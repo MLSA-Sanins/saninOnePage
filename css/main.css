@@ -3160,7 +3160,7 @@ position: relative;
   .avatar-div{
     width:110px;
     height:110px;
-    position:fixed;
+    position:absolute;
     top:40%;
     left:50%;
     transform: translate(-50%,-50%);
