@@ -1308,7 +1308,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
         font-size: 4.2rem;
     }
     .display-2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -4315,30 +4315,35 @@ footer .row {
     }
 }
 
+
 .interest{
     display:block;
     width: 33%;
     float: left;
+    color: aliceblue;
 }
 
 .interest img{
     position:relative;
-    height:150px;
-    width:150px;
+    height:100px;
+    width:100px;
 }
 
 
 .interest-head{
+    font-family: 'Courier New', Courier, monospace;
     padding:20px 30px 20px !important;
     margin-bottom: 0;
-    font-size:16px;
+    font-size:20px;
     
 }
 
 .interest-content{
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0 30px 0 !important;
     margin-bottom: 30px;
     font-size:14px;
+    color: #818791;
 }
 
 .interests:hover .interest{
