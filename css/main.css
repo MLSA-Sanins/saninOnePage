@@ -3104,9 +3104,10 @@ position: relative;
 
 .header-glass{
     background: rgba( 0, 255, 255, 0.15 );
-    box-shadow: 0 6px 12px 0 rgba( 31, 38, 135, 0.8 );
+    box-shadow: 0 6px 12px  rgba( 31, 38, 135, 0.8 );
     backdrop-filter: blur( 6.5px );
     -webkit-backdrop-filter: blur( 6.5px );
+    overflow:hidden;
 }
 
 .team-container{
