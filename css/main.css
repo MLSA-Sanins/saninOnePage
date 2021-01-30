@@ -1,7 +1,6 @@
 /* =================================================================== 
  *
- *  Glint v1.0 Main Stylesheet
- *  11-20-2017
+ *  Sanins
  *  ------------------------------------------------------------------
  *
  *  TOC:
@@ -3151,7 +3150,7 @@ position: relative;
     grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
     grid-row-gap: 5em;
     grid-column-gap:4em;
-    grid-template-rows: repeat(auto,minmax(200px,500px));
+    grid-template-rows: repeat(auto,minmax(200px,900px));
     width: 100%;
   }
   
@@ -3160,6 +3159,14 @@ position: relative;
     display:flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .team-name{
+    color: #000000;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "montserrat-regular", sans-serif;
   }
 
   .team-grid-item .team-card .bio-div span{
@@ -3176,31 +3183,61 @@ position: relative;
   }
   .team-card{
       width:280px;
-      height:350px;
+      height:400px;
       position:relative;
       display:flex;
       flex-direction: column;
-      background: rgba( 255, 255, 255, 0.15 );
-      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.5 );
-      backdrop-filter: blur( 6.5px );
-      -webkit-backdrop-filter: blur( 6.5px );
       transition: 0.1s ease-out;
   }
 
-  .team-card:hover{
-      transform:scale(1.03);
+  .team-card::before{
+      content:"";
+      box-sizing: border-box;
+      position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.5 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    transition: 0.1s ease-out;
+  }
+
+  .team-card:hover::before  {
+      transform:scale(1.05);
       background: rgba( 255, 255, 255, 0.25 );
-      box-shadow: 0 18px 32px 0 rgba( 31, 38, 135, 0.7 );
+      box-shadow: 0px 0px 32px 2px rgba( 31, 38, 135, 0.7 );
       backdrop-filter: blur( 8px );
       -webkit-backdrop-filter: blur( 8px );
+      border-radius:10px 10px 10px 10px;
+  }
+
+  .team-card:hover .cover-image,.team-card:hover .profile-link-div,
+  .team-card:hover .avatar-image{
+    transform:scale(1.03);
+   
+  }
+
+  .team-card:hover>.cover-image{
+    border-radius:10px 10px 0 0;
+  }
+
+  .profile-link:hover{
+      transform:scale(1.2);
+      box-shadow: 0px 0px 13px 3px rgba( 31, 38, 135, 0.4 );
+      backdrop-filter: blur( 11.5px );
+      -webkit-backdrop-filter: blur( 11.5px );
   }
 
   .cover-image{ 
       width: 100%;
       height:30%;
+      top:0;
       background-color: #000000;
       padding:0;
       object-fit: cover;
+      transition: 0.1s ease-out;
   }
 
   .avatar-div{
@@ -3213,17 +3250,18 @@ position: relative;
     padding:0;
     border-radius: 50%;
     background: rgba( 255, 255, 255, 0.15 );
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      backdrop-filter: blur( 8.5px );
-      -webkit-backdrop-filter: blur( 8.5px );
-      
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    transition: 0.1s ease-out;
   }
 
   .avatar-image{
     width:90%;
     border-radius: 50%;
+    transition: 0.1s ease-out;
   }
 
   .bio-div{
@@ -3232,34 +3270,59 @@ position: relative;
       display:flex;
       flex-direction:column;
       align-items: center;
-  }
-
-  .bio-div h3{
-    font-family: "montserrat-light";
-    color:black;
-    padding:0;
-    margin:0;
-    line-height: 30px;
+      transition: 0.1s ease-out;
   }
 
   .button-div{
     display: flex;
     width:100%;
-    height:3em;
+    height:40px;
     align-items: center;
+    padding:0px 2em;
+    margin-bottom:1em;
     justify-content: space-around;
-    border:1px solid white;
+    transition: 0.1s ease-out;
   }
 
   .profile-link{
       width:30px;
       height:30px;
       display: flex;
-      background-color: #000000;
+      justify-content: center;
+      align-items: center;
+      background: rgba( 255, 255, 255, 0.35 );
+      display:flex;
+      box-shadow: 0px 0px 12px 2px rgba( 31, 38, 135, 0.3 );
+      justify-content: center;
+      border-radius:4px;
+      align-items: center;
+      backdrop-filter: blur( 9.5px );
+      -webkit-backdrop-filter: blur( 8.5px );
+      transition: 0.1s ease-out;
+    }
+
+    .profile-link-div{
+        
     }
 
     .profile-icon{
-        justify-self: center;
+        
+    }
+
+    .facebook{
+        color:#3b5998;
+    }
+
+    .linkedin{
+        color:#0077B5;
+    }
+
+    .github{
+        color:#333333;
+    }
+
+    .twitter{
+        color:rgba(29, 161, 242,1);
     }
   
   @media only screen and (max-width: 1200px) {
