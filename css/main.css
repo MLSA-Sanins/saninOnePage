@@ -3162,6 +3162,18 @@ position: relative;
     align-items: center;
   }
 
+  .team-grid-item .team-card .bio-div span{
+      color: #000000;
+      font-size: 14px;
+      font-family: "montserrat-regular", sans-serif;
+  }
+
+  .team-card .bio p{
+      color: #000000;
+      font-size: 12px;
+      font-family: "montserrat-regular", sans-serif;
+      text-align: center;
+  }
   .team-card{
       width:280px;
       height:350px;
