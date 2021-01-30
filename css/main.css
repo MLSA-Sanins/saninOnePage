@@ -3201,7 +3201,7 @@ position: relative;
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.5 );
     backdrop-filter: blur( 6.5px );
     -webkit-backdrop-filter: blur( 6.5px );
-    transition: 0.1s ease-out;
+    transition: 0.1s ease-in;
   }
 
   .team-card:hover::before  {
@@ -3237,7 +3237,7 @@ position: relative;
       background-color: #000000;
       padding:0;
       object-fit: cover;
-      transition: 0.1s ease-out;
+      transition: 0.1s ease-in;
   }
 
   .avatar-div{
@@ -3255,13 +3255,13 @@ position: relative;
     align-items: center;
     backdrop-filter: blur( 8.5px );
     -webkit-backdrop-filter: blur( 8.5px );
-    transition: 0.1s ease-out;
+    transition: 0.1s ease-in;
   }
 
   .avatar-image{
     width:90%;
     border-radius: 50%;
-    transition: 0.1s ease-out;
+    transition: 0.1s ease-in;
   }
 
   .bio-div{
@@ -3270,7 +3270,7 @@ position: relative;
       display:flex;
       flex-direction:column;
       align-items: center;
-      transition: 0.1s ease-out;
+      transition: 0.1s ease-in;
   }
 
   .button-div{
@@ -3281,7 +3281,7 @@ position: relative;
     padding:0px 2em;
     margin-bottom:1em;
     justify-content: space-around;
-    transition: 0.1s ease-out;
+    transition: 0.1s ease-in;
   }
 
   .profile-link{
@@ -3298,7 +3298,7 @@ position: relative;
       align-items: center;
       backdrop-filter: blur( 9.5px );
       -webkit-backdrop-filter: blur( 8.5px );
-      transition: 0.1s ease-out;
+      transition: 0.1s ease-in;
     }
 
     .profile-link-div{
