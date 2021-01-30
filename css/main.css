@@ -99,7 +99,7 @@ body {
  * ## links
  * ------------------------------------------------------------------- */
 a {
-    color: #0087cc;
+    color: var(--primary-color-blue);
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
@@ -1308,7 +1308,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
         font-size: 4.2rem;
     }
     .display-2 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -1321,6 +1321,15 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     position: relative;
     margin-bottom: 3.6rem;
     max-width: 960px;
+}
+
+.back-button{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top:40%;
+    left:auto;
+    right:10%;
 }
 
 .section-header.has-bottom-sep {
@@ -2517,6 +2526,8 @@ html.no-csstransitions .home-content__main {
     background: #111111;
 }
 
+
+
 .works-content {
     max-width: 1160px;
     margin-top: -23.4rem;
@@ -2867,12 +2878,12 @@ html.no-csstransitions .home-content__main {
 
 .clients-testimonials .testimonials .slick-prev {
     left: -130px;
-    background-image: url("../images/left-arrow.png");
+    background-image: url("../images/left-arrow.webp");
 }
 
 .clients-testimonials .testimonials .slick-next {
     right: -130px;
-    background-image: url("../images/right-arrow.png");
+    background-image: url("../images/right-arrow.webp");
 }
 
 .clients-testimonials .testimonials .slick-dots {
@@ -3033,18 +3044,7 @@ body {
 
 /* ================================================================================================== */
 /* team member */
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
 
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    line-height: 1.5;
-    color: #323232;
-    font-size: 15px;
-    font-weight: 400;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-}
 .heading-title {
     margin-bottom: 100px;
 }
@@ -3072,10 +3072,42 @@ body {
 }
 
 /*the team grid*/
+.team-button-div{
+    margin-top:5em;
+    display:flex;
+    width:100%;
+    height:50px;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color-blue);
+}
+
+.team-view-button{
+border:2px solid var(--primary-color-blue);
+border-radius: 7px;
+padding:10px 20px 10px 20px;
+transition:0.4s ease-out;
+}
+
+.team-view-button:hover{
+    transform: scale(1.04);
+    background-color: var(--accent-color-darkBlue);
+    color: #FFFFFF;
+}
+
 
 .teams-section{
-margin: 0;
+padding-top:12rem;
+padding-bottom:25rem;
 position: relative;
+}
+
+.header-glass{
+    background: rgba( 0, 255, 255, 0.15 );
+    box-shadow: 0 6px 12px  rgba( 31, 38, 135, 0.8 );
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+    overflow:hidden;
 }
 
 .team-container{
@@ -3099,7 +3131,7 @@ position: relative;
     width:100%;
     height:100%;
     background: black;
-    background-image: url(/images/pexels-zaksheuskaya-1546251.jpg);
+    background-image: url(/images/pexels-zaksheuskaya-1546251.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -3117,7 +3149,8 @@ position: relative;
   .team-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-    grid-gap: 2em;
+    grid-row-gap: 5em;
+    grid-column-gap:4em;
     grid-template-rows: repeat(auto,minmax(200px,500px));
     width: 100%;
   }
@@ -3131,7 +3164,7 @@ position: relative;
 
   .team-card{
       width:280px;
-      height:400px;
+      height:350px;
       position:relative;
       display:flex;
       flex-direction: column;
@@ -3152,16 +3185,17 @@ position: relative;
 
   .cover-image{ 
       width: 100%;
-      height:40%;
+      height:30%;
       background-color: #000000;
       padding:0;
+      object-fit: cover;
   }
 
   .avatar-div{
     width:110px;
     height:110px;
     position:absolute;
-    top:40%;
+    top:30%;
     left:50%;
     transform: translate(-50%,-50%);
     padding:0;
@@ -3224,6 +3258,15 @@ position: relative;
     }
     .team-grid-item{
         padding:0;
+      }
+      .blank{
+          display:none;
+      }
+  }
+
+  @media only screen and (max-width: 1400px) {
+      .blank{
+        display:none;
       }
   }
 /*TEAM CARD EXTRA*/
@@ -3621,7 +3664,7 @@ position: relative;
  * ------------------------------------------------------------------- */
 .s-contact {
     background-color: #151515;
-    background-image: url("../images/contact-bg.jpg");
+    background-image: url("../images/contact-bg.webp");
     background-repeat: no-repeat;
     background-position: center, center;
     padding-top: 15rem;
@@ -4071,7 +4114,7 @@ footer .row {
     border: none;
     width: 150px;
     height: 150px;
-    background: url("../images/logo dark.png") no-repeat center;
+    background: url("../images/logodark.webp") no-repeat center;
     background-size: 150px 150px;
     font: 0/0 a;
     text-shadow: none;
@@ -4094,7 +4137,7 @@ footer .row {
     width: 100%;
     height: 5.4rem;
     padding: 1.2rem 160px 1.2rem 60px;
-    background: url(../images/email-icon.png) 20px center no-repeat, rgba(0, 0, 0, 0.1);
+    background: url(../images/email-icon.webp) 20px center no-repeat, rgba(0, 0, 0, 0.1);
     background-size: 24px 16px, auto;
     border: none;
     margin-bottom: 1.8rem;
@@ -4311,6 +4354,7 @@ footer .row {
     padding: 0 30px 0 !important;
     margin-bottom: 30px;
     font-size:14px;
+    color: #888;
 }
 
 .interests:hover .interest{
