@@ -3187,7 +3187,7 @@ position: relative;
       position:relative;
       display:flex;
       flex-direction: column;
-      transition: 0.1s ease-out;
+      
   }
 
   .team-card::before{
@@ -3255,7 +3255,6 @@ position: relative;
     align-items: center;
     backdrop-filter: blur( 8.5px );
     -webkit-backdrop-filter: blur( 8.5px );
-    transition: 0.1s ease-out;
   }
 
   .avatar-image{
@@ -3270,7 +3269,6 @@ position: relative;
       display:flex;
       flex-direction:column;
       align-items: center;
-      transition: 0.1s ease-out;
   }
 
   .button-div{
@@ -3281,7 +3279,6 @@ position: relative;
     padding:0px 2em;
     margin-bottom:1em;
     justify-content: space-around;
-    transition: 0.1s ease-out;
   }
 
   .profile-link{
