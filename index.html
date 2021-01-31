@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/cards.css">
+
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
@@ -844,13 +845,16 @@
                 </div>
 
                 <div class="go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                    <!-- <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a> -->
+                    
                 </div>
             </div>
 
         </div> <!-- end footer-bottom -->
 
     </footer> <!-- end footer -->
+
+    
 
 
     <!-- photoswipe background
@@ -891,8 +895,8 @@
         </div>
 
     </div> <!-- end photoSwipe background -->
-
-
+    <button id="toTop"></button>
+        
     <!-- preloader
     ================================================== -->
     <div id="preloader">
@@ -907,12 +911,32 @@
         </div>
     </div>
 
+    
+
 
     <!-- Java Script
     ================================================== -->
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function() {
+        if ($(this).scrollTop()) {
+            $('#toTop').fadeIn();
+        } else {
+            $('#toTop').fadeOut();
+        }
+    });
+    
+        $("#toTop").click(function() {
+            $("html, body").animate({scrollTop: 0}, 1000);
+        });
+    </script>
+
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 </body>
 
 </html>
+
+
+
+
