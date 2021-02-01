@@ -1327,7 +1327,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     align-items: center;
     position: absolute;
     left:auto;
-    position: fixed;
     right: 38px;
     top: 24px;
    
