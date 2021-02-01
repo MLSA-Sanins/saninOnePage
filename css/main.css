@@ -3220,7 +3220,7 @@ position: relative;
       flex-direction: column;
       /*border:3px solid rgba(255,255,255,0.022);*/
         background: radial-gradient(105.82% 105.82% at -1.53% -3.28%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.11) 100%);
-        backdrop-filter: blur(30px);
+	 
   }
 
   /*.team-card::before{
