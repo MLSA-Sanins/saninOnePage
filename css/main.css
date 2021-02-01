@@ -3167,7 +3167,7 @@ position: relative;
     width:200px;
     height: 25px;
     text-align: center;
-    font-family: Poppins;
+    font-family: 'Poppins', serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -3181,7 +3181,7 @@ position: relative;
     height: 20px;
     left: 536px;
     text-align: center;
-    font-family: Poppins;
+    font-family: 'Poppins', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -3195,7 +3195,7 @@ position: relative;
     left: 1138px;
     top: 378px;
     text-align: center;
-    font-family: Poppins;
+    font-family: 'Poppins', serif;
     font-style: normal;
     font-weight: 300;
     font-size: 12px;
@@ -3250,9 +3250,6 @@ position: relative;
 
   .profile-link:hover{
       transform:scale(1.2);
-      box-shadow: 0px 0px 13px 3px rgba( 31, 38, 135, 0.4 );
-      backdrop-filter: blur( 11.5px );
-      -webkit-backdrop-filter: blur( 11.5px );
   }
 
   .cover-image{ 
@@ -3317,8 +3314,6 @@ position: relative;
       justify-content: center;
       border-radius:4px;
       align-items: center;
-      backdrop-filter: blur( 9.5px );
-      -webkit-backdrop-filter: blur( 8.5px );
       transition: 0.1s ease-out;
     }
 
