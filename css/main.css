@@ -3063,11 +3063,21 @@ body {
     margin: 0 auto;
     display: inline-block;
     line-height: 25px;
-    color: #7e7e7e;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
 }
 .text-uppercase {
     text-transform: uppercase;
-    color:#0078d4;
+    font-weight: bold;
+    font-size: 62px;
+    line-height: 82px;
+    text-align: center;
+    color: #0085FF;
 }
 
 /*the team grid*/
@@ -3102,8 +3112,8 @@ position: relative;
 }
 
 .header-glass{
-    background: rgba( 0, 255, 255, 0.15 );
-    box-shadow: 0 6px 12px  rgba( 31, 38, 135, 0.8 );
+    background: rgba(6, 41, 184, 0.15);
+    box-shadow: 0 6px 12px  rgba(14, 16, 65, 0.8);
     backdrop-filter: blur( 6.5px );
     -webkit-backdrop-filter: blur( 6.5px );
     overflow:hidden;
