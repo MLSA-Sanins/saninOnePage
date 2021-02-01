@@ -57,9 +57,9 @@
 /* ===================================================================
  * # base style overrides
  *
- * ------------------------------------------------------------------- */
+ * #0078d4------------------------------------------------------------------- */
  :root{
-    --primary-color-blue:#0078d4;
+    --primary-color-blue:#7C2FD3;
     --primary-color-purple: #5c2d91;
     --accent-color-blue:#50e6ff;
     --accent-color-purple:#d59dff;
@@ -2967,7 +2967,7 @@ body {
   font-weight: normal !important;
   font-variant: normal !important;
   text-transform: none !important;
-  speak: normal;
+  speak-as: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -4292,7 +4292,7 @@ footer .row {
 /* ------------------------------------------------------------------- 
  * ## go to top
  * ------------------------------------------------------------------- */
-.go-top {
+/* .go-top {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -4323,8 +4323,7 @@ footer .row {
 
 .go-top a:hover, .go-top a:focus {
     color: #FFFFFF;
-}
-
+}*/
 
 /* ------------------------------------------------------------------- 
  * responsive:
@@ -4462,6 +4461,44 @@ footer .row {
         width:100px;
     }
 }
+
+#toTop{
+    width: 50px; 
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    bottom: 23px;
+    right: 15px;
+    background: black;
+    cursor: pointer;
+    position: fixed;
+    display: none;
+    outline: none;
+    
+}
+#toTop:before {
+    content: '';
+    top: 50%;
+    left: 50%;
+    display: block;
+    margin: -14px 0 0 -12px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 23px solid white;
+    position: absolute;}
+
+@media only screen and (max-width: 600px) {
+    #toTop{
+        width: 40px; 
+        height: 40px; 
+        cursor: pointer; 
+        position: fixed;
+        bottom: 15px;
+        right: 13px;
+        display: none;
+    }
+}
+
 
 
 

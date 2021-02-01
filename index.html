@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/cards.css">
+
     <!-- script
     ================================================== -->
     <script src="js/modernizr.js"></script>
@@ -241,7 +242,7 @@
                 </div>
                 <div class="service-text">
                     <h3 class="h2">How It Started?</h3>
-                    <p>Nothing comes without hardwork and dedication,so do us,the SANINS. Loads of efforts made it happen.From a group of three to a community of techno-aspirants.
+                    <p>Nothing comes without hardwork and dedication,so do us,the SANINS. Loads of efforts made it happen. From a group of three to a community of techno-aspirants.
                         <ul>
                             <li>
                                 We started as a community of three in the year 2019. Stayed together to learn and grow. 
@@ -250,7 +251,7 @@
                                 We took in the similar minded people to keep focus on learning and filling the gaps. 
                             </li>
                             <li>
-                                It was in the year of 2021 January that two of our mates got selected for the Microsoft Student Learn Ambassador Program. We decided to expand. 
+                                It was in the year of 2021 January that two of our mates got selected for the Microsoft Student Learn Ambassador Program. That is when we decided to expand. 
                             </li>
                         </ul>
                     </p>
@@ -269,7 +270,7 @@
                                 The code of conduct is to maintain a workplace ambience where generosity is nothing much to ask.
                             </li>
                             <li>
-                                This community is powered by the <strong>Microsoft Student Ambassadors</strong>, those encourage you to make a difference.<strong>Microsoft Student Learn Program</strong> amplifies your skills and prepares you for real-world problems.
+                                This community is powered by the <strong>Microsoft Student Ambassadors</strong>, those who encourage you to make a difference. <strong>Microsoft Student Learn Program</strong> amplifies your skills and prepares you for real-world problems.
                             </li>
                             
                         </ul>
@@ -342,7 +343,7 @@
                             That's where the Microsoft Student Ambassadors <i>Arshad Khan</i> and <i>Ankan Biswas</i>  impacted the objective. 
                             </li>
                             <li>
-                                Both have different directions regarding technology, yet both are quick learners. From looking various ways to explain applications of tech-world to starting community, they successfully backed themselves as Microsoft student Ambassadors.They believed in growth, no matter how small things start.
+                                Both have different directions regarding technology, yet both are quick learners. From looking various ways to explain applications of tech-world to starting community, they successfully backed themselves as Microsoft student Ambassadors. They believed in growth, no matter how small things start.
                             </li>
                             <li>
                                 And justifying their acquired positions and skills, here they are to fill in the gaps of knowledge.
@@ -844,13 +845,16 @@
                 </div>
 
                 <div class="go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                    <!-- <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a> -->
+                    
                 </div>
             </div>
 
         </div> <!-- end footer-bottom -->
 
     </footer> <!-- end footer -->
+
+    
 
 
     <!-- photoswipe background
@@ -891,8 +895,8 @@
         </div>
 
     </div> <!-- end photoSwipe background -->
-
-
+    <button id="toTop"></button>
+        
     <!-- preloader
     ================================================== -->
     <div id="preloader">
@@ -907,12 +911,32 @@
         </div>
     </div>
 
+    
+
 
     <!-- Java Script
     ================================================== -->
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function() {
+        if ($(this).scrollTop()) {
+            $('#toTop').fadeIn();
+        } else {
+            $('#toTop').fadeOut();
+        }
+    });
+    
+        $("#toTop").click(function() {
+            $("html, body").animate({scrollTop: 0}, 1000);
+        });
+    </script>
+
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 </body>
 
 </html>
+
+
+
+
