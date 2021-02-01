@@ -3164,43 +3164,43 @@ position: relative;
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
   .team-name{
-    /*color: #000000;
-    margin-bottom: 0;
-    font-size: 15px;
-    font-weight: 300;
-    font-family: "montserrat-regular", sans-serif;*/
-    font-family: 'Poppins', sans-serif;
+    width:200px;
+    height: 25px;
+    text-align: center;
+    font-family: Poppins;
     font-style: normal;
     font-weight: 600;
-    font-size: 21px;
+    font-size: 16px;
     line-height: 31px;
     color: #FFFFFF;
-    mix-blend-mode: overlay;
+    margin-bottom: 0rem;
   }
 
   .roles{
+    width: 400px;
+    height: 20px;
+    left: 536px;
+    text-align: center;
     font-family: Poppins;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 15px;
-    line-height: 22px;
-    
     color: #FFFFFF;
-    
-    mix-blend-mode: overlay;
-  }
-
-  .team-grid-item .team-card .bio-div span{
-      color: #000000;
-      font-size: 14px;
-      font-family: "montserrat-regular", sans-serif;
+    margin-bottom: 10px;
   }
 
   .team-card .bio p{
-      color: #000000;
-      font-size: 12px;
-      font-family: "montserrat-regular", sans-serif;
-      text-align: center;
+    width: 188px;
+    height: 75px;
+    left: 1138px;
+    top: 378px;
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
   }
   .team-card{
       width:230px;
@@ -3208,7 +3208,7 @@ position: relative;
       position:relative;
       display:flex;
       flex-direction: column;
-      border:3px solid rgba(255,255,255,0.022);
+      /*border:3px solid rgba(255,255,255,0.022);*/
       background: radial-gradient(105.82% 105.82% at -1.53% -3.28%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.11) 100%);
         backdrop-filter: blur(30px);
         border-radius: 6px;
@@ -3309,12 +3309,11 @@ position: relative;
   .profile-link{
       width:30px;
       height:30px;
+      margin: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: rgba( 255, 255, 255, 0.35 );
       display:flex;
-      box-shadow: 0px 0px 12px 2px rgba( 31, 38, 135, 0.3 );
       justify-content: center;
       border-radius:4px;
       align-items: center;
@@ -3323,8 +3322,8 @@ position: relative;
       transition: 0.1s ease-out;
     }
 
-    .profile-link-div{
-        
+    .profile-link img{
+        opacity: 0.7;
     }
 
     .profile-icon{
