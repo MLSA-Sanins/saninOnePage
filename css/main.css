@@ -3218,7 +3218,9 @@ position: relative;
       position:relative;
       display:flex;
       flex-direction: column;
-      /*border:3px solid rgba(255,255,255,0.022);*/
+      border-radius: 6px;
+      border: 3.5px solid rgb(201, 199, 199);
+      background-clip: padding-box;
         background: radial-gradient(105.82% 105.82% at -1.53% -3.28%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.88) 0%, rgba(255, 255, 255, 0.11) 100%);
 	 
   }
@@ -3327,6 +3329,7 @@ position: relative;
 
     .profile-link img{
         opacity: 0.7;
+        max-width: fit-content;
     }
 
     .profile-icon{
