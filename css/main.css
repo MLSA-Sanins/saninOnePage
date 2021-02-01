@@ -4174,6 +4174,7 @@ footer {
     line-height: 2;
     text-align: center;
     color: rgba(255, 255, 255, 0.3);
+    background: #111111;
 }
 
 footer h4 {
