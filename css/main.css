@@ -4166,6 +4166,7 @@ footer {
     font-size: 15px;
     line-height: 2;
     text-align: center;
+	background-color: #000000;
     color: rgba(255, 255, 255, 0.3);
 }
 
@@ -4203,6 +4204,10 @@ footer .row {
 
 .footer-main .right {
     padding-left: 40px;
+}
+
+.footer-desc strong{
+    font-family: "montserrat-bold", sans-serif;
 }
 
 .footer-logo {
