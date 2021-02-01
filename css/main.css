@@ -1326,9 +1326,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: flex;
     align-items: center;
     position: absolute;
-    top:40%;
     left:auto;
-    right:10%;
+    position: fixed;
+    right: 38px;
+    top: 24px;
+   
 }
 
 .section-header.has-bottom-sep {
