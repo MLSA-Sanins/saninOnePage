@@ -3263,10 +3263,9 @@ position: relative;
   .button-div{
     display: flex;
     width:100%;
-    height:40px;
+    height:auto;
     align-items: center;
-    padding:0px 2em;
-    margin-bottom:1em;
+    padding:0 20px 10px 20px;
     justify-content: space-around;
   }
 
