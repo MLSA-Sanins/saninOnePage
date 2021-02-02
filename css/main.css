@@ -3316,6 +3316,10 @@ position: relative;
       .blank{
           display:none;
       }
+      .team-card{
+        width:260px;
+        height:360px;
+    }
   }
 
   @media only screen and (max-width: 1400px) {
