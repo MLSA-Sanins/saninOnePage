@@ -1,21 +1,32 @@
-.grid-container {
-  display:grid;
-  grid-template-columns:auto;
-  grid-gap: 2em;
-  
+:root{
+  --primary-color-blue:#0078d4;
+  --primary-color-purple: #5c2d91;
+  --accent-color-blue:#50e6ff;
+  --accent-color-purple:#d59dff;
+  --accent-color-darkBlue: #203a61;
 }
 
-.grid-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-@media only screen and (max-width: 900px) {
-  .grid-container {
-    grid-template-columns: 1fr;
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    .about-desc{
+      padding:3em;
+    }
+
+    .card-media{
+      flex-direction: column;
+ 
+    }
+    .card-media-object-container{
+      width:100%;
+      height:200px;
+    }
   }
-}
+
 
 /* events card */
 .u-float-right {
@@ -40,13 +51,13 @@
 }
 
 .card-media {
+  display: flex;
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, .12);
-  height: 250px;
+  height: auto;
   margin-bottom: 25px;
   transition: all 300ms ease-out;
   width: 100%;
-  
 }
 
 .card-media:hover {
@@ -54,23 +65,22 @@
 }
 
 .card-media-object-container {
-  background: none;
-  float: left;
-  height: 250px;
-  width: 35%;
   position: relative;
+  flex-grow: 1;
 }
 
 .card-media-object {
+  background-image: url(../images/event-bg.webp);
   background-position: center center;
   background-size: cover;
-  height: 250px;
+  height:100%;
+  position: relative;
 }
 
 .card-media-object:after {
   content: " ";
   display: block;
-  height: 250px;
+  height: 100%;
   left: 0;
   opacity: 0;
   position: absolute;
@@ -105,7 +115,6 @@
   width: auto;
   padding: 5px 5px;
   position: relative;
-  width: 65%;
 }
 
 .card-media-body-top {
