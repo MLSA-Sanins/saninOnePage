@@ -70,12 +70,21 @@
 }
 
 .card-media-object {
-  background-image: url(../images/event-bg.webp);
   background-position: center center;
   background-size: cover;
   height:100%;
   position: relative;
 }
+
+.event-img1{
+  background-image: url(../images/eventimg.webp);
+}
+
+.event-img2{
+  background-image: url(../images/event-bg.webp);
+}
+
+
 
 .card-media-object:after {
   content: " ";
